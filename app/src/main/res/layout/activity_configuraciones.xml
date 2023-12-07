@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context=".activitys.configuraciones.Configuraciones">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="20dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="178dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tarifas de viajes" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/EditTextGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:hintTextColor="@color/grey_dark"
+
+                    app:startIconTint="@color/grey_dark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textFieldPrecioMin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="4sp"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:hint="Precio Minuto"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:textColor="@color/grey_dark"
+                        android:textColorHint="@color/grey_dark"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/EditTextGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:hintTextColor="@color/grey_dark"
+
+                    app:startIconTint="@color/grey_dark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textFieldValorKm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="4sp"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:hint="Precio Km"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:textColor="@color/grey_dark"
+                        android:textColorHint="@color/grey_dark"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/EditTextGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:hintTextColor="@color/grey_dark"
+                app:startIconTint="@color/grey_dark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textFieldPrecioMinimo"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4sp"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="Precio minimo"
+                    android:inputType="number|numberDecimal|numberSigned"
+                    android:textColor="@color/grey_dark"
+                    android:textColorHint="@color/grey_dark"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/grey"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ganacias de la app" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/EditTextGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:hintTextColor="@color/grey_dark"
+                    app:startIconTint="@color/grey_dark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textFieldPorcentaje"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="4sp"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:hint="Porcentaje"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:textColor="@color/grey_dark"
+                        android:textColorHint="@color/grey_dark"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/EditTextGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:hintTextColor="@color/grey_dark"
+                    app:startIconTint="@color/grey_dark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textFieldTarifa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="4sp"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:hint="Tarifa fija"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:textColor="@color/grey_dark"
+                        android:textColorHint="@color/grey_dark"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="20dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="178dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_whatsapp" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/EditTextGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:hintTextColor="@color/grey_dark"
+                app:startIconTint="@color/grey_dark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textFieldTelefono_ayuda"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4sp"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="Telefono de ayuda"
+                    android:inputType="phone"
+                    android:textColor="@color/grey_dark"
+                    android:textColorHint="@color/grey_dark"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/EditTextGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:hintTextColor="@color/grey_dark"
+                app:startIconTint="@color/grey_dark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textFieldGrupo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4sp"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="Grupo de Whastapp"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/grey_dark"
+                    android:textColorHint="@color/grey_dark"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BotonEstilo"
+        android:visibility="gone"
+        android:text="Actualizar" />
+
+</LinearLayout>

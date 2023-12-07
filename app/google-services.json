@@ -1,0 +1,138 @@
+{
+  "project_info": {
+    "project_number": "877884762328",
+    "firebase_url": "https://toons-transporte-default-rtdb.firebaseio.com",
+    "project_id": "toons-transporte",
+    "storage_bucket": "toons-transporte.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877884762328:android:c918c8feb90ec162e94fad",
+        "android_client_info": {
+          "package_name": "app.castellanoseloy.ixi_administrativo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877884762328-maud0e4hmtdpf7d4dvtacpqop948md21.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.castellanoseloy.ixi_administrativo",
+            "certificate_hash": "4d3572b3a332ceb089bae42bdf0001b3066741e7"
+          }
+        },
+        {
+          "client_id": "877884762328-9amsrkvnoisf2olleveb80ci9ak4aknq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxacMHNrTaPLk2FPSiqKHC48IkzKPgzQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "877884762328-9amsrkvnoisf2olleveb80ci9ak4aknq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877884762328:android:bc8c68bdadf18277e94fad",
+        "android_client_info": {
+          "package_name": "com.castellanoseloy.toonscliente"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877884762328-1csf87oa3iepjm90lpm5ggo8hvcsq0ur.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.castellanoseloy.toonscliente",
+            "certificate_hash": "4d3572b3a332ceb089bae42bdf0001b3066741e7"
+          }
+        },
+        {
+          "client_id": "877884762328-bg1grj96i6t9u9dnmugcfckjm9bgacer.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.castellanoseloy.toonscliente",
+            "certificate_hash": "af23dc0c9cc5800206581d70bb0472966e331e96"
+          }
+        },
+        {
+          "client_id": "877884762328-9amsrkvnoisf2olleveb80ci9ak4aknq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxacMHNrTaPLk2FPSiqKHC48IkzKPgzQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "877884762328-9amsrkvnoisf2olleveb80ci9ak4aknq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877884762328:android:a431b608e2998f64e94fad",
+        "android_client_info": {
+          "package_name": "com.castellanoseloy.toonsconductor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877884762328-i954vq47ia8imlhcdrc2vgp264eir3th.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.castellanoseloy.toonsconductor",
+            "certificate_hash": "4cd3c727c7561d569078f0d86e8cc964f1499dcf"
+          }
+        },
+        {
+          "client_id": "877884762328-sovbm5m2fqd2r7b0d1l0enho6cra3246.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.castellanoseloy.toonsconductor",
+            "certificate_hash": "4d3572b3a332ceb089bae42bdf0001b3066741e7"
+          }
+        },
+        {
+          "client_id": "877884762328-9amsrkvnoisf2olleveb80ci9ak4aknq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxacMHNrTaPLk2FPSiqKHC48IkzKPgzQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "877884762328-9amsrkvnoisf2olleveb80ci9ak4aknq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

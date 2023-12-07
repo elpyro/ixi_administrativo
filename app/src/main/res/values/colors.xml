@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="rojo">#EEF13737</color>
+    <color name="blancoTransparente">#32FBFBFB</color>
+    <color name="red">#FF1739</color>
+    <color name="red_claro">#31FB1B3E</color>
+    <color name="red_fondo">#BEB4B4</color>
+    <color name="blue">#3665F4</color>
+
+    <color name="grey">#BFBFBF</color>
+    <color name="grey_dark">#353535</color>
+
+    <color name="rojoClaro1">#A66B6B</color>
+    <color name="rojoClaro2">#F85353</color>
+    <color name="rojoClaro3">#FB1F1F</color>
+    <color name="rojoClaro4">#AA0000</color>
+    <color name="verde">#559148</color>
+
+    <color name="starSelectedColor">#FFC107</color> <!-- Color de estrellas seleccionadas (amarillo en este ejemplo) -->
+    <color name="starUnselectedColor">#CCCCCC</color> <!-- Color de estrellas no seleccionadas (gris claro en este ejemplo) -->
+
+    <color name="colorThumb">#EEF13737</color> <!-- Color del círculo (interruptor) -->
+
+</resources>

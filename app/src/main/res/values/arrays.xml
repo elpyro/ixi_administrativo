@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estados">Verificando Datos
+        <item>Todos</item>
+        <item>Valida tu usuario</item>
+        <item>Verificando Datos</item>
+        <item>Validado</item>
+        <item>Bloqueado</item>
+        <item>Recuperacion de Telefono</item>
+    </string-array>
+
+    <array name="tipoDocumento">
+        <item>Cédula Ciudananía</item>
+        <item>Cédula Extrangería</item>
+        <item>Pasaporte</item>
+        <item>PPPT</item>
+    </array>
+
+    <string-array name="cambioEstados">
+        <item>Valida tu usuario</item>
+        <item>Verificando Datos</item>
+        <item>Validado</item>
+        <item>Bloqueado</item>
+    </string-array>
+
+    <string-array name="estadosVehiculo">
+        <item>Todos</item>
+        <item>Valida tu vehiculo</item>
+        <item>Verificando Datos</item>
+        <item>Validado</item>
+        <item>Prohibido</item>
+    </string-array>
+
+    <string-array name="cambiarEstadosVehiculo">
+        <item>Valida tu vehiculo</item>
+        <item>Verificando Datos</item>
+        <item>Validado</item>
+        <item>Prohibido</item>
+    </string-array>
+
+
+    <array name="tipoVehiculos">
+        <item>Automóvil</item>
+        <item>Taxi</item>
+        <item>Minivan</item>
+        <item>Microbús</item>
+        <item>Motocicleta</item>
+    </array>
+
+</resources>

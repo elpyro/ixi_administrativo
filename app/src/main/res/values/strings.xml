@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ixi_administrativo</string>
+    <string name="documentoIdentidad">Documento de identidad</string>
+    <string name="Frontal">Frontal</string>
+    <string name="Trasera">Trasera</string>
+    <string name="TuGanancia">Tú Ganancia</string>
+    <string name="trasera">Trasera</string>
+    <string name="frontal">Frontal</string>
+    <string name="licencia">Licencia de Conducir</string>
+    <string name="ColorVehiculo">Color de vehiculo</string>
+    <string name="Documento">Documentos</string>
+</resources>

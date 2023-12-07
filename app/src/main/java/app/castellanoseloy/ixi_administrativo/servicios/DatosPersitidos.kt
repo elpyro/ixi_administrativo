@@ -1,0 +1,45 @@
+package app.castellanoseloy.ixi_administrativo.servicios
+
+import android.app.Service
+import android.content.Intent
+import android.os.IBinder
+import android.util.Log
+import app.castellanoseloy.ixi_administrativo.modelos.UsuarioModelo
+
+class DatosPersitidos : Service() {
+
+    // Datos que deben persistir
+    companion object {
+        var datosUsuario: UsuarioModelo? =null
+    }
+
+    override fun onBind(intent: Intent?): IBinder? {
+        // No necesitamos un enlace para este servicio
+        return null
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        // Inicializar el servicio
+        Log.d("Datos persistentes", "Servicio creado")
+    }
+
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        // Lógica principal del servicio
+        Log.d("Datos persistentes", "Servicio iniciado")
+
+        // Acceder o modificar datosPersistidos aquí
+        Log.d("Datos persistentes", "Datos persistidos: $datosUsuario")
+
+        // Puedes realizar operaciones en segundo plano aquí
+
+        // Devuelve START_STICKY para que el servicio se reinicie si se cierra inesperadamente
+        return START_STICKY
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        // Realizar tareas de limpieza o liberación de recursos
+        Log.d("MiServicio", "Servicio destruido")
+    }
+}
