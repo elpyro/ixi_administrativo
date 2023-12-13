@@ -31,6 +31,14 @@
         <item>Prohibido</item>
     </string-array>
 
+
+    <string-array name="estadosNequi">
+        <item>Todos</item>
+        <item>Cancelado</item>
+        <item>Realizado</item>
+        <item>Pendiente</item>
+    </string-array>
+
     <string-array name="cambiarEstadosVehiculo">
         <item>Valida tu vehiculo</item>
         <item>Verificando Datos</item>
@@ -38,6 +46,12 @@
         <item>Prohibido</item>
     </string-array>
 
+    <string-array name="reportes">
+        <item>Comision de viajes</item>
+        <item>Movimientos Nequi</item>
+        <item>Viajes Realizados</item>
+        <item>Viajes Cancelados</item>
+    </string-array>
 
     <array name="tipoVehiculos">
         <item>Automóvil</item>

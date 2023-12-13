@@ -32,7 +32,7 @@ class HistoriesAdapter(val context: Activity, val histories: ArrayList<History>)
             val fecha = history.timestamp?.let { getFechaComoString(it) }
             Log.d("Historial","la fecha s del registro es: $fecha")
             if (fecha != null) {
-                val ganancia = history.tarifas?.totalComisionReferido ?: 0.0
+                val ganancia = history.tarifas?.totalComisionApp ?: 0.0
 
                 // Verificar si la clave ya existe en el mapa
                 if (gananciaPorDia.containsKey(fecha)) {
@@ -55,7 +55,7 @@ class HistoriesAdapter(val context: Activity, val histories: ArrayList<History>)
         val history =  histories[position] // UN SOLO HISTORIAL
         holder.textViewOrigin.text = history.origin
         holder.textViewDestination.text = history.destination
-        holder.textViewGanancia.text=history.tarifas?.totalComisionReferido.toString().formatoMonenda()
+        holder.textViewGanancia.text=history.tarifas?.totalComisionApp.toString().formatoMonenda()
 
         if (history.timestamp != null) {
             holder.textViewDate.text = RelativeTime.getTimeAgo(history.timestamp!!, context)

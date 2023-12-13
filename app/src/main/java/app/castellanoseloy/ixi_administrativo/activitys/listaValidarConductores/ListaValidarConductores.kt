@@ -38,9 +38,6 @@ class ListaValidarConductores : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding.toolbar.setTitleTextColor(Color.WHITE)
 
-
-
-
         observadores()
         listeners()
     }

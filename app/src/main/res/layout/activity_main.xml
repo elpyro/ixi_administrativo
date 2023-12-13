@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             style="@style/BotonEstilo"
-            android:text="Validar Referidores" />
+            android:text="Referidores" />
 
         <Button
             android:id="@+id/button_validarConductores"
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/BotonEstilo"
-            android:text="Validar Conductores" />
+            android:text="Conductores" />
 
         <Button
             android:id="@+id/button_validarVehiculos"
@@ -53,8 +53,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/BotonEstilo"
-            android:text="Validar Vehiculos" />
+            android:text="Vehiculos" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/red_claro"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:id="@+id/button_saldos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/BotonEstilo"
+            android:text="Reportes" />
 
         <View
             android:layout_width="match_parent"

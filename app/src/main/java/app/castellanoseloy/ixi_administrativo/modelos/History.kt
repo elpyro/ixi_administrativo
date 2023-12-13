@@ -1,6 +1,7 @@
 package app.castellanoseloy.ixi_administrativo.modelos
 
 import com.beust.klaxon.Klaxon
+import java.io.Serializable
 
 private val klaxon = Klaxon()
 data class History (
@@ -25,7 +26,7 @@ data class History (
     val tarifas: TarifasModelo? = null,
     val timestamp: Long? = null,
     val car: CarModel?=null
-) {
+) : Serializable {
     public fun toJson() = klaxon.toJsonString(this)
 
     companion object {

@@ -38,6 +38,7 @@ class DriverProvider {
         map["apellido"] = conductor?.apellido!!
         map["tipoDocumento"] = conductor?.tipoDocumento!!
         map["numeroDocumento"] = conductor?.numeroDocumento!!
+        map["saldo"] = conductor?.saldo!!
         return db.document(conductor?.id!!).update(map)
             .addOnFailureListener { e ->
                 Log.e("Firebase informacion", "Error buscando clientes", e)

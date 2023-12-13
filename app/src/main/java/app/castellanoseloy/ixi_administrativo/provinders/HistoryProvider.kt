@@ -7,6 +7,7 @@ import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import java.util.Date
 
 
 class HistoryProvider {
@@ -25,5 +26,18 @@ class HistoryProvider {
         return db.whereEqualTo("idDriver", idConductor)
     }
 
-
+    fun getHistoriesClientBetweenDates(idCliente: String, startDate: Date, endDate: Date): Query {
+        return db.whereEqualTo("idClient", idCliente)
+            .whereGreaterThanOrEqualTo("timestamp", startDate)
+            .whereLessThanOrEqualTo("timestamp", endDate)
+            .orderBy("timestamp", Query.Direction.DESCENDING)
     }
+
+    fun getHistoriesBetweenDates(startDate: Long, endDate: Long): Query {
+        return db.whereGreaterThanOrEqualTo("timestamp", startDate)
+            .whereLessThanOrEqualTo("timestamp", endDate)
+            .orderBy("timestamp", Query.Direction.DESCENDING)
+    }
+
+
+}

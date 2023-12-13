@@ -13,22 +13,40 @@
         android:theme="@style/Theme.Ixi_administrativo"
         tools:targetApi="31">
         <activity
-            android:name=".activitys.configuraciones.Configuraciones"
+            android:name=".activitys.listaTransacciones.ListaTransacciones"
             android:exported="false" />
+        <activity
+            android:name=".activitys.reportes.Reportes"
+            android:exported="false"
+            android:parentActivityName=".activitys.listaValidarConductores.ListaValidarConductores"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activitys.configuraciones.Configuraciones"
+            android:exported="false"
+            android:parentActivityName=".activitys.listaValidarConductores.ListaValidarConductores"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activitys.historiesDetails.HistoriesDetailsActivity"
             android:exported="false"
-            android:parentActivityName=".activitys.historiesActivity.HistoriesActivity" />
+            android:parentActivityName=".activitys.historiesActivity.HistoriesViajesCanceladosActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activitys.historiesActivity.HistoriesActivity"
             android:exported="false"
-            android:parentActivityName=".activitys.detalleReferidor.DetalleReferidor" />
+            android:parentActivityName=".activitys.reportes.Reportes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activitys.historiesActivity.HistoriesViajesCanceladosActivity"
+            android:exported="false"
+            android:parentActivityName=".activitys.detalleReferidor.DetalleReferidor"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activitys.vistaImagen.VistaImagen"
             android:exported="false" />
         <activity
             android:name=".activitys.detalleReferidor.DetalleReferidor"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Login"
             android:exported="true">

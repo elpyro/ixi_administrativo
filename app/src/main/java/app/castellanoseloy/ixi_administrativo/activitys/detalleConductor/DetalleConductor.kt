@@ -14,6 +14,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.ViewModelProvider
 import app.castellanoseloy.ixi_administrativo.R
 import app.castellanoseloy.ixi_administrativo.activitys.historiesActivity.HistoriesActivity
+import app.castellanoseloy.ixi_administrativo.activitys.historiesActivity.HistoriesViajesCanceladosActivity
 import app.castellanoseloy.ixi_administrativo.activitys.vistaImagen.VistaImagen
 import app.castellanoseloy.ixi_administrativo.databinding.ActivityDetalleConductorBinding
 import app.castellanoseloy.ixi_administrativo.modelos.ConductorModelo
@@ -75,7 +76,7 @@ class DetalleConductor : AppCompatActivity() {
 
     private fun mostrarHistorial() {
         val i = Intent(this, HistoriesActivity::class.java)
-        i.putExtra("id", extraIdConductor)
+        i.putExtra("idDriver", extraIdConductor)
         startActivity(i)
     }
 
@@ -159,12 +160,20 @@ class DetalleConductor : AppCompatActivity() {
         val numeroDocumento = binding.textFieldDocumento.text.toString()
         val tipoDocumento = binding.spinner.selectedItem.toString()
 
+        val textoSaldo = binding.textFieldSaldo.text.toString()
+        val saldo = if (textoSaldo.isNotEmpty()) {
+            textoSaldo.toDoubleOrNull() ?: 0.0
+        } else {
+            0.0
+        }
+
         val client = ConductorModelo(
             id = extraIdConductor,
             nombre = name,
             apellido = lastname,
             tipoDocumento = tipoDocumento,
             numeroDocumento = numeroDocumento,
+            saldo=saldo
         )
 
         driverProvider.update(client).addOnCompleteListener {

@@ -59,6 +59,7 @@ class DetalleConductorViewModel : ViewModel() {
         binding.textFieldLastname.setText(conductor?.apellido)
         binding.textFieldPhone.setText(conductor?.telefono)
         binding.textFieldDocumento.setText(conductor?.numeroDocumento)
+        binding.textFieldSaldo.setText(conductor?.saldo.toString())
         //estblecer el valor del spinner
         val opcionesArray =
             context.resources.getStringArray(R.array.tipoDocumento)

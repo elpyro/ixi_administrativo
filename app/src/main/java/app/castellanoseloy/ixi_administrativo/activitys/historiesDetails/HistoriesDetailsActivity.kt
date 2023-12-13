@@ -61,13 +61,11 @@ class HistoriesDetailsActivity : AppCompatActivity() {
                     RelativeTime.getTimeAgo(history?.timestamp!!, this@HistoriesDetailsActivity)
 
                 binding.textViewPasajero.text=history?.pasajero?: "Desconocido"
+                binding.textViewPasajeroTelefono.text=history?.pasajeroTelefono
 
-                binding.textViewPrice.text =history!!.tarifas?.totalComisionReferido.toString().formatoMonenda()
+                binding.textViewPrice.text =history!!.tarifas?.totalComisionApp.toString().formatoMonenda()
                 binding.textViewCalificacionConductor.text = "${history?.calificationToDriver  ?: "5"}    ${history?.commentClient  ?: "No calificaste"}"
                 binding.textViewClientCalification.text = "${history?.calificationToClient ?: "5"}    ${history?.commentDriver ?: "El conductor no califico"}"
-
-//                binding.textViewTimeAndDistance.text =
-//                    "${history?.time} Min - ${String.format("%.1f", history?.km)} Km"
 
                 binding?.buttonVerCoductor?.setOnClickListener{
                      history?.idDriver?.let { it2 -> history?.car?.let { it1 ->
@@ -81,18 +79,6 @@ class HistoriesDetailsActivity : AppCompatActivity() {
                     history?.idClient?.let { it2 -> mostrarCliente( it2) }
                 }
 
-//                binding?.linearLayoutCalificacionConductor?.setOnClickListener{
-//                    if(history?.calificationToDriver==null){
-//                        val i = Intent(this, CalificationDriverActivity::class.java)
-//                        i.putExtra("idHistory", history?.id)
-//                        i.putExtra("price", history?.tarifas?.totalViaje)
-//                        i.putExtra("origin", history?.origin)
-//                        i.putExtra("destination", history?.destination)
-//                        i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-//                        startActivity(i)
-//                    }
-//
-//                }
             }
 
         }

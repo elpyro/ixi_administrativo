@@ -44,7 +44,10 @@ import java.util.*
 object Utilidades {
 
 
-
+    fun String.convertirStringADate(): Date {
+        val formato = SimpleDateFormat("dd/MM/yyyy")
+        return formato.parse(this) ?: Date()
+    }
     fun String.eliminarAcentosTildes(): String {
         val normalized = Normalizer.normalize(this, Normalizer.Form.NFD)
         val pattern = "\\p{InCombiningDiacriticalMarks}+".toRegex()
@@ -144,9 +147,9 @@ object Utilidades {
         return fecha
     }
 
-    fun convertirFechaAUnix(fecha: String): Long {
+    fun String.convertirStringAUnix(): Long {
         val formatoFecha = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
-        val fechaObjeto = formatoFecha.parse(fecha)
+        val fechaObjeto = formatoFecha.parse(this)
 
         val calendar = Calendar.getInstance()
         calendar.time = fechaObjeto

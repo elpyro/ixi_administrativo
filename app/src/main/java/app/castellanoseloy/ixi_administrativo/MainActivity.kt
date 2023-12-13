@@ -7,6 +7,7 @@ import app.castellanoseloy.ixi_administrativo.activitys.configuraciones.Configur
 import app.castellanoseloy.ixi_administrativo.activitys.listaValidarConductores.ListaValidarConductores
 import app.castellanoseloy.ixi_administrativo.activitys.listaValidarVehiculos.ListaValidarVehiculos
 import app.castellanoseloy.ixi_administrativo.activitys.listaValidarRereridores.ListaValidarReferidores
+import app.castellanoseloy.ixi_administrativo.activitys.reportes.Reportes
 import app.castellanoseloy.ixi_administrativo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -34,6 +35,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.buttonValidarVehiculos.setOnClickListener {
             val i = Intent(this, ListaValidarVehiculos::class.java)
+            startActivity(i)
+        }
+        binding.buttonSaldos.setOnClickListener {
+            val i = Intent(this, Reportes::class.java)
             startActivity(i)
         }
         binding.buttonConfiguraciones.setOnClickListener {

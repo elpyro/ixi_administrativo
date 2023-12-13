@@ -9,4 +9,5 @@
     <string name="licencia">Licencia de Conducir</string>
     <string name="ColorVehiculo">Color de vehiculo</string>
     <string name="Documento">Documentos</string>
+    <string name="SeleccioneInforme">Seleccione Informe</string>
 </resources>

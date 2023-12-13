@@ -14,6 +14,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.ViewModelProvider
 import app.castellanoseloy.ixi_administrativo.R
 import app.castellanoseloy.ixi_administrativo.activitys.historiesActivity.HistoriesActivity
+import app.castellanoseloy.ixi_administrativo.activitys.historiesActivity.HistoriesViajesCanceladosActivity
 import app.castellanoseloy.ixi_administrativo.activitys.vistaImagen.VistaImagen
 import app.castellanoseloy.ixi_administrativo.databinding.ActivityDetalleReferidorBinding
 import app.castellanoseloy.ixi_administrativo.modelos.ClienteModelo
@@ -73,7 +74,7 @@ class DetalleReferidor : AppCompatActivity() {
 
     private fun mostrarHistorial() {
         val i = Intent(this, HistoriesActivity::class.java)
-        i.putExtra("id", extraIdCliente)
+        i.putExtra("idClient", extraIdCliente)
         startActivity(i)
     }
 
