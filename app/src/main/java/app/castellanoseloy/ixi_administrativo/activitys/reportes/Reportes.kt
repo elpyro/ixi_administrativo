@@ -30,6 +30,8 @@ class Reportes : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding.toolbar.setTitleTextColor(Color.WHITE)
 
+        progressDialogFragment = ProgressDialogFragment.newInstance()
+
         binding?.textViewDesde?.text = Utilidades.obtenerFechaActual()
 
 
@@ -52,13 +54,15 @@ class Reportes : AppCompatActivity() {
     }
 
     private fun mostrarProgressDialog() {
-        progressDialogFragment = ProgressDialogFragment.newInstance()
         progressDialogFragment.show(supportFragmentManager, "ProgressDialog")
     }
 
     override fun onPause() {
         super.onPause()
-        progressDialogFragment.dismiss()
+        if (progressDialogFragment.isAdded) {
+            progressDialogFragment.dismiss()
+        }
+
     }
 
 }

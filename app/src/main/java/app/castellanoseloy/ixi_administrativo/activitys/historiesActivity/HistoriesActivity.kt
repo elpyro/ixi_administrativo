@@ -59,6 +59,8 @@ class HistoriesActivity : AppCompatActivity() {
                             histories.add(history!!)
                             totalStrar += history?.calificationToDriver ?: 5.00
                         }
+                        // Ordenar la lista por fecha (timestamp)
+                        histories.sortByDescending { it.timestamp }
 
                         val cantidadRegistros = documents.size
                         val promedio = if (cantidadRegistros > 0) totalStrar / cantidadRegistros else 0.0
@@ -75,6 +77,7 @@ class HistoriesActivity : AppCompatActivity() {
     }
 
     private fun mostrarViajesPorFecha(extraViajesRealizadosPorFecha: ArrayList<History>) {
+        extraViajesRealizadosPorFecha.sortByDescending { it.timestamp }
         adapter = HistoriesAdapter(this@HistoriesActivity, extraViajesRealizadosPorFecha)
         binding.recyclerViewHistories.adapter = adapter
         binding.linearLayoutCalificacion.visibility=View.GONE
@@ -97,7 +100,9 @@ class HistoriesActivity : AppCompatActivity() {
                             histories.add(history!!)
                             totalStrar += history?.calificationToClient ?: 5.00
                         }
-
+                        // Ordenar la lista por fecha (timestamp)
+                        histories.sortByDescending { it.timestamp }
+                        
                         val cantidadRegistros = documents.size
                         val promedio = if (cantidadRegistros > 0) totalStrar / cantidadRegistros else 0.0
                         val df = DecimalFormat("#.00")
