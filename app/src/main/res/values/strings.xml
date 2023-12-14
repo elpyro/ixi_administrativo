@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ixi_administrativo</string>
+    <string name="app_name">ixi administrativo</string>
     <string name="documentoIdentidad">Documento de identidad</string>
     <string name="Frontal">Frontal</string>
     <string name="Trasera">Trasera</string>

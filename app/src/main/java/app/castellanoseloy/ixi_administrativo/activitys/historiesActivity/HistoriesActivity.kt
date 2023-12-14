@@ -57,7 +57,7 @@ class HistoriesActivity : AppCompatActivity() {
                             var history = d.toObject(History::class.java)
                             history?.id = d.id
                             histories.add(history!!)
-                            totalStrar += history?.calificationToClient ?: 5.00
+                            totalStrar += history?.calificationToDriver ?: 5.00
                         }
 
                         val cantidadRegistros = documents.size
